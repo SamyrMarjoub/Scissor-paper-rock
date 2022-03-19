@@ -25,13 +25,13 @@ butaopapel.addEventListener('click', function () {
     }else{
         gamecontainer.style.display = 'flex'
     }
-    imgplayer.setAttribute('src', './rock-paper-scissors-master/rock-paper-scissors-master/images/icon-paper.svg')
+    imgplayer.setAttribute('src', './images/icon-paper.svg')
     botaoplayer.style.border = '20px solid #4b68f2'
     var x = Math.floor(Math.random() * 3) + 1
     let playercont = 1
     if (x === playercont) {
         setTimeout(function () {
-            imgia.setAttribute('src', './rock-paper-scissors-master/rock-paper-scissors-master/images/icon-paper.svg')
+            imgia.setAttribute('src', './images/icon-paper.svg')
             anuncio.innerHTML = 'DRAW'
             if(vw<=700){
                 anuncio.style.marginLeft = '0%'
@@ -58,7 +58,7 @@ butaopapel.addEventListener('click', function () {
         botaoia.style.display = 'none'
     } else if (x === 2) {
         setTimeout(function () {
-            imgia.setAttribute('src', './rock-paper-scissors-master/rock-paper-scissors-master/images/icon-scissors.svg')
+            imgia.setAttribute('src', './images/icon-scissors.svg')
             anuncio.innerHTML = 'YOU LOSE'
             if(vw<700){
                 anuncio.style.marginLeft = '-4%'
@@ -84,7 +84,7 @@ butaopapel.addEventListener('click', function () {
         botaoia.style.display = 'none'
     } else if (x === 3) {
         setTimeout(function () {
-            imgia.setAttribute('src', './rock-paper-scissors-master/rock-paper-scissors-master/images/icon-rock.svg')
+            imgia.setAttribute('src', './images/icon-rock.svg')
             anuncio.innerHTML = 'YOU WIN'
             if(vw<700){
                 anuncio.style.marginLeft = '-4%'
@@ -119,13 +119,13 @@ butaotesoura.addEventListener('click', function () {
     }else{
         gamecontainer.style.display = 'flex'
     }
-    imgplayer.setAttribute('src', './rock-paper-scissors-master/rock-paper-scissors-master/images/icon-scissors.svg')
+    imgplayer.setAttribute('src', './images/icon-scissors.svg')
     botaoplayer.style.border = '20px solid #eba31d'
     var x = Math.floor(Math.random() * 3) + 1
     let playercont = 2
     if (x === playercont) {
         setTimeout(function () {
-            imgia.setAttribute('src', './rock-paper-scissors-master/rock-paper-scissors-master/images/icon-scissors.svg')
+            imgia.setAttribute('src', './images/icon-scissors.svg')
             anuncio.innerHTML = 'DRAW'
             if(vw<=700){
                 anuncio.style.marginLeft = '0%'
@@ -152,7 +152,7 @@ butaotesoura.addEventListener('click', function () {
         botaoia.style.display = 'none'
     } else if (x === 1) {
         setTimeout(function () {
-            imgia.setAttribute('src', './rock-paper-scissors-master/rock-paper-scissors-master/images/icon-paper.svg')
+            imgia.setAttribute('src', './images/icon-paper.svg')
             anuncio.innerHTML = 'YOU WIN'
             if(vw<700){
                 anuncio.style.marginLeft = '-4%'
@@ -179,7 +179,7 @@ butaotesoura.addEventListener('click', function () {
     } else if (x === 3) {
         setTimeout(function () {
             anuncio.innerHTML = 'YOU LOSE'
-            imgia.setAttribute('src', './rock-paper-scissors-master/rock-paper-scissors-master/images/icon-rock.svg')
+            imgia.setAttribute('src', './images/icon-rock.svg')
             if(vw<700){
                 anuncio.style.marginLeft = '-4%'
             }else{
@@ -213,13 +213,13 @@ butaopedra.addEventListener('click', function () {
     }else{
         gamecontainer.style.display = 'flex'
     }
-    imgplayer.setAttribute('src', './rock-paper-scissors-master/rock-paper-scissors-master/images/icon-rock.svg')
+    imgplayer.setAttribute('src', './images/icon-rock.svg')
     botaoplayer.style.border = '20px solid #e03b5d'
     var x = Math.floor(Math.random() * 3) + 1
     let playercont = 3
     if (x === playercont) {
         setTimeout(function () {
-            imgia.setAttribute('src', './rock-paper-scissors-master/rock-paper-scissors-master/images/icon-rock.svg')
+            imgia.setAttribute('src', './images/icon-rock.svg')
             anuncio.innerHTML = 'DRAW'
             if(vw<=700){
                 anuncio.style.marginLeft = '0%'
@@ -246,7 +246,7 @@ butaopedra.addEventListener('click', function () {
 
     } else if (x === 2) {
         setTimeout(function () {
-            imgia.setAttribute('src', './rock-paper-scissors-master/rock-paper-scissors-master/images/icon-scissors.svg')
+            imgia.setAttribute('src', './images/icon-scissors.svg')
             anuncio.innerHTML = 'YOU WIN'
             if(vw<700){
                 anuncio.style.marginLeft = '-4%'
@@ -273,7 +273,7 @@ butaopedra.addEventListener('click', function () {
 
     } else if (x === 1) {
         setTimeout(function () {
-            imgia.setAttribute('src', './rock-paper-scissors-master/rock-paper-scissors-master/images/icon-paper.svg')
+            imgia.setAttribute('src', './images/icon-paper.svg')
             anuncio.innerHTML = 'YOU LOSE'
             if(vw<700){
                 anuncio.style.marginLeft = '-4%'
