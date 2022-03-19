@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap');
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+html{
+    height: auto;
+}
+body{
+    background: linear-gradient(90deg,hsl(214,47%,23%) 0%,hsl(237,49%,15%) 100%);;
+overflow-x: hidden;
+   
+}
+.container2{
+    max-width: 1000px;  
+    width: 90%;
+    height: 250px;
+    margin: 2rem auto 0;
+}
+.border2{
+    width: 100%;
+    height: 180px;
+    border-radius: 15px;
+    border: 1px solid white;
+    border-color: rgba(237, 237, 241, 0.25);
+   float: left;
+   margin-top: 30px;
+   display: flex;
+ align-items: center;
+}
+.tela{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    z-index: 10;
+  left: 0;
+  top: 0;
+  display: none;
+}
+ .img-logo{
+   margin-left: 3%;
+flex: 1;
+} 
+ .score-area{
+   height: 100px;
+   flex: 1;
+} 
+.score-block{
+    width: 120px;
+    height: 120px;
+    background-color: white;
+   margin-left: 70%;
+    margin-top: -3%;
+    border-radius: 10px;
+   
+}
+.item{
+display: flex;
+width: auto;
+max-width: 100%;
+margin: auto;
+}
+.score-block p{
+   color: hsl(229, 64%, 46%);
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-family: 'Barlow', sans-serif;
+font-family: 'Forum', cursive;
+font-weight: 700;
+margin: 0;
+padding: 0;
+margin-left: 26%;
+line-height: 50px;
+}
+.score-block h1{
+    margin-left: 38%;
+    font-size: 60px;
+    margin-top: -10px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.rules-button{
+    cursor: pointer;
+}
+.rules-button:hover{
+    background-color: rgb(255, 255, 255, 0.2);
+    transition: all 0.2s;
+
+}
+main{
+    width: 100%;
+    height: 200px;
+    display: flex;
+margin-top: 30px;
+}
+.div-papel{
+height: 150px;
+border-radius: 150px;
+ width: 50%;
+ display: flex;
+ justify-content: flex-end;
+ z-index: 1;
+ cursor: pointer;
+
+}
+.div-papel img{
+   width: 80px;
+   margin-left: 30px;
+   margin-top: 20px;
+}
+.div-tesoura img{
+   width: 90px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.div-tesoura{
+  height: 150px;
+    border-radius: 150px;
+width: 50%;
+margin-left: 100px;
+z-index: 1;
+cursor: pointer;
+}
+.botaotesoura{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 150px;
+    border: 20px solid #eba31d;
+}
+.triangulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+}
+.botaopapel{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 150px;
+border: 20px solid #4b68f2;
+}
+.botaopapel:hover{
+    border: 20px solid rgb(118, 140, 255);
+    transition:  all 0.5s;
+}
+.botaopedra:hover{
+    border: 20px solid #e9627d;
+    transition:  all 0.5s;
+}
+.botaotesoura:hover{
+    border: 20px solid #f6c873;
+    transition:  all 0.5s;
+}
+
+.div-pedra{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.botaopedra{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 150px;
+    border: 20px solid #e03b5d;
+    margin-top: -100px;
+cursor: pointer;
+
+}
+.botaopedra img{
+    width: 80px;
+    margin-left: 30px;
+    margin-top: 30px;
+
+}
+.container-game{
+    width: 100%;
+    height: 200px;
+    display: none;
+    justify-content: center;
+    transition: 1s all;
+}
+
+.container{
+    transition: 0.2s all;
+}
+.rules button{
+  
+    bottom: 2rem;
+    right: 2rem;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 5px;
+    border-radius: 5px;
+    border: 1px solid white;
+    width: 150px;
+    height: 40px;
+    font-weight: 700;
+   position: absolute;
+   background-color: transparent;
+}
+.botaoplayer{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 200px;
+    border: 20px solid #4b68f2;
+margin-right: 50px;
+grid-area: player;
+
+}
+.botaoia{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 200px;
+    border: 20px solid #e03b5d;
+    display: none;
+}
+.botaoplayer img{
+    margin-left: 45px;
+    margin-top: 40px;
+    width: 100px;
+}
+.botaoia img{
+    margin-left: 45px;
+    margin-top: 40px;
+    width: 100px;
+}
+.botaoplay button{
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    margin-top: 0px;
+    border-radius: 10px;
+    margin-right: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    letter-spacing: 2PX;
+    font-weight: 600;
+}
+.botaoplay button:hover{
+    color: red;
+    transition: all 0.2s;
+}
+.container-game p{
+    margin-left:14%;
+    color: white;
+    font-size: 25px;
+}
+.play p{
+  margin-top: 100px;
+  margin-left: 15%;
+  font-size: 30px;
+}
+.container-ia p{
+    width: 250px;
+    grid-area:  ia;
+
+}
+.play{
+    grid-area: play;
+
+}
+.anuncio{
+    opacity: 0;
+}
+.playagain{
+    opacity: 0;
+}
+.rules-box{
+position: absolute;
+background-color: white;
+width: 400px;
+height: 450px;
+z-index: 9999;
+border-radius: 20px;
+}
+.rules-box-flex{
+display: flex;
+}
+.rules-img{
+    margin-left: 10%;
+    margin-top: 30px;
+}
+.img-close img{
+    cursor: pointer;
+}
+.rules-flex{
+    display: flex;
+align-items: flex-end;
+justify-content: center;
+background-color: red;
+width: 100%;
+margin-top: -50px;
+display: none;
+}
+.img-close{
+    height: 30px;
+    width: 100%;
+    margin-left: 45%;
+    margin-top: 40px;
+}
+.img-close img{
+    width: 30px;
+}
+.rules-text{
+    margin-left: 10%;
+    margin-top: 20px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+font-size: 18px;
+color: hsl(229deg 25% 31%);
+}
+@media screen and (max-width:1280px) {
+    .container{
+        margin-top: -50px;
+    }
+}
+ 
+@media screen and (max-width:1024px) {
+    .score-block{
+        margin-left: 65%;
+    }
+    .gameContainer{
+    left: 30%;   
+    }
+  .border2{
+    height: 120px;
+      margin-top: 0;
+  }
+  main{
+margin-top: -110px;
+  }
+  .score-block{
+      height: 100px;
+      margin-top: 0px;
+  }
+  .score-block h1{
+      margin-top: -20px;
+  }
+  
+    .botaopapel, .botaopedra, .botaotesoura{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+    }
+    .botaopapel img{
+        width: 50px;
+        margin-left: 25px;
+    }
+    .botaopapel img{
+        width: 50px;
+        margin-left: 25px;
+    }
+    .botaopedra img{
+        width: 50px;
+        margin-left: 25px;
+    }
+    .botaotesoura img{
+        width: 50px;
+        margin-left: 25px;
+    }
+   .container-game{
+       margin-top: -100px;
+   }
+   .botaoplayer, .botaoia{
+       width: 150px;
+       height: 150px;
+   }
+   .botaoplayer img{
+       margin-left: 30px;
+       margin-top: 15px;
+   }
+   .botaoia img{
+    margin-left: 20px;
+    margin-top: 15px;
+   }
+   .container-game p{
+       margin-left: 10%;
+   }
+}
+@media screen and (max-width:850px) {
+    .score-block{
+        margin-left: 55%;
+        width: 120px;
+        height: 120px;
+        margin-top: -3%;
+    }
+    .border2{
+        width: 100%;
+        height: 180px;
+        border-radius: 15px;
+        border: 1px solid white;
+        border-color: rgba(237, 237, 241, 0.25);
+       margin-top: 0px;
+      
+    }
+    .score-block p{
+       color: hsl(229, 64%, 46%);
+        font-size: 15px;
+        letter-spacing: 3px;
+        font-family: 'Barlow', sans-serif;
+    font-family: 'Forum', cursive;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    margin-left: 26%;
+    line-height: 50px;
+    }
+    .score-block h1{
+        margin-left: 38%;
+        font-size: 60px;
+        margin-top: -10px;
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+   
+}
+
+.container-ia p{
+    max-width: 150px;
+    width: auto;
+    font-size: 20px;
+}
+.container-player p{
+    max-width: 150px;
+    width: auto;
+    font-size: 20px;
+}
+.anuncio{
+    width: 150px;
+}
+
+@media screen and (max-width:700px) {
+ 
+    .gameContainer{
+    left: 25%;   
+ } 
+ .item{
+    grid-template-areas: 
+    "player player ia ia"
+   "play play play play"
+    ;
+    display: grid;
+    justify-content: center;
+ }
+ 
+ .play{
+     height: auto;
+     display: flex;
+     flex-direction: column;
+ }
+ .botaoplay button{
+     width: 350px;
+     margin-left: 10%;
+ }
+ .play p{
+     font-size: 50px;
+     width:350px;
+     margin-top: 30px;
+text-align: center;
+margin-left: auto;
+ }
+.paragrafo{
+    width: 100%;
+}
+ .container-game{
+     height: auto;
+ }
+ .container{
+     margin-top: -50px;
+ }
+ .triangulo img{
+     width: 200px;
+ }
+ .rules{
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+ }
+ .rules button{
+  position: absolute;
+    margin-top: 50px;
+    bottom: initial;
+    right: initial;
+ }
+ .botaoplayer, .botaoia{
+     width: 100px;
+     height: 100px;
+     border-radius: 100px;
+ }
+ .playagain {
+    max-width: 280px; 
+    width: auto;
+   margin-right: 0px;
+ }
+ .botaoia img{
+     width: 70px;
+    margin-left: 20px;
+}
+.botaoplayer img{
+    width: 70px;
+    margin-left: 20px;
+}
+.container-ia p{
+    width: 200px;
+}
+.botaoplayer{
+    margin-left: 5%;
+}
+.botaoplay button{
+    margin-right: 0px;
+}
+}
+@media screen and (max-width:685px) {
+    .score-block{
+        margin-left: 45%;
+    }
+}
+@media screen and (max-width:560px) {
+    .score-block{
+        margin-left: 35%;
+    }
+    .gameContainer{
+      left: 20%;   
+          }
+}
+@media screen and (max-width:450px) {
+    .score-block{
+        margin-left: 20%;
+    }
+    .container{
+    margin-top: -50px;
+    }
+    .border2{
+      height: 100px;
+    }
+    .container2{
+        margin-top: 20px;
+    }
+    .score-block{
+        height: 90px;
+        margin-top: 5px;
+    }
+    .border2 img{
+        width: 130px;
+    }
+    .score-block h1{
+        font-size: 50px;
+        margin-top: -20px;
+    }
+    .triangulo img{
+        width: 250px;
+    }
+    .anuncio{
+        width: 300px;
+    }
+}
+@media screen and (max-width:420px) {
+    .botaopapel, .botaopedra, .botaotesoura{
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+        border-width: 15px;
+    }
+    .botaopapel img{
+        width: 40px;
+        margin-left: 20px;
+    }
+    .botaopedra img{
+        width: 40px;
+        margin-left: 20px;
+    }
+    .botaotesoura img{
+        width: 40px;
+        margin-left: 20px;
+    }
+    .container-ia p{
+        width: 200px;
+      
+    }
+  
+}
